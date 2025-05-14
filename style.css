@@ -110,11 +110,11 @@ header .logo {
     background-color: transparent;
 }
 
-/* Hamburger Menu Styles */
 .hamburger-menu {
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 5px;
     width: 30px;
     height: 22px;
     cursor: pointer;

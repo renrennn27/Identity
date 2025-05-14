@@ -114,7 +114,6 @@ header .logo {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
     width: 30px;
     height: 22px;
     cursor: pointer;
@@ -600,7 +599,7 @@ footer p {
     .hamburger-menu {
         display: flex;
         position: absolute;
-        top: 25px;
+        top: 34px;
         right: 25px;
     }
   

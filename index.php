@@ -259,13 +259,13 @@ require_once 'config.php';
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="contact-text">Surabaya, Indonesia</div>
+                        <div class="contact-text">Pucang Arjo, Kertajaya, Kec. Gubeng, Surabaya, Indonesia</div>
                     </div>
                 </div>
                 <h3>Follow Me</h3>
                 <div class="social-links">
                     <a href="https://github.com/renrennn27" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/reno-alif-prasetyo-080938363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://x.com/Atreides176?t=oiePBGwEKOHRBASP-FIQUQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/renno.renn/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>

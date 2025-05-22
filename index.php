@@ -1,3 +1,8 @@
+<?php
+
+require_once 'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -266,25 +271,7 @@
                 </div>
             </div>
             <div class="contact-form" data-aos="fade-down" data-aos-delay="200">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="form-btn">Send Message</button>
-                </form>
+<form action="process_contact.php" method="POST"> <div class="form-group"> <label for="name">Your Name</label> <input type="text" id="name" name="name" required> </div> <div class="form-group"> <label for="email">Your Email</label> <input type="email" id="email" name="email" required> </div> <div class="form-group"> <label for="subject">Subject</label> <input type="text" id="subject" name="subject" required> </div> <div class="form-group"> <label for="message">Your Message</label> <textarea id="message" name="message" required></textarea> </div> <button type="submit" class="form-btn">Send Message</button> </form>
             </div>
         </div>
     </section>
@@ -294,7 +281,31 @@
     </footer>
 
 
-
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    
+    fetch('process_contact.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if(data.status === 'success') {
+            alert('Pesan berhasil dikirim!');
+            this.reset();
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Terjadi kesalahan saat mengirim pesan');
+    });
+});
+</script>
     <script src="script.js"></script>
     <script>
         document.getElementById('showMoreBtn').addEventListener('click', function () {

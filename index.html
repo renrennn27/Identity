@@ -39,7 +39,7 @@
         </div>
         <div class="btn">
             <a href="https://github.com/renrennn27" class="btn1">Github</a>
-            <button class="btn2">Contact</button>
+            <a href="#contact" class="btn2">Contact</a>
         </div>        
     </section>
 
@@ -64,11 +64,10 @@
         </div>
     </section>
 
-    <!-- Add this section after the about section and before the achievements section -->
+
 <section class="skills" id="skills">
     <h2 class="section-title" data-aos="fade-up">My Skills</h2>
     <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
-        <!-- Frontend Skills -->
         <div class="skill-icon" data-skill="HTML5">
             <i class="fab fa-html5"></i>
         </div>
@@ -135,27 +134,27 @@
                 <img src="asset/front-end.png" alt="Beginners Web Front-End Certification" class="achievement-img">
                 <h3 class="achievement-title">Beginners Web Front-End Certification</h3>
             </div>
-            <div class="achievement-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="achievement-card hidden-achievement" data-aos="fade-up" data-aos-delay="600">
                 <img src="asset/web dev.png" alt="Fundamental Front-End Web Certification" class="achievement-img">
                 <h3 class="achievement-title">Fundamental Front-End Web Certification</h3>
             </div>
-            <div class="achievement-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="achievement-card hidden-achievement" data-aos="fade-up" data-aos-delay="700">
                 <img src="asset/back-end js.png" alt="Beginners Back-End JavaScript Certification" class="achievement-img">
                 <h3 class="achievement-title">Beginners Back-End JavaScript Certification</h3>
             </div>
-            <div class="achievement-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="achievement-card hidden-achievement" data-aos="fade-up" data-aos-delay="800">
                 <img src="asset/financial literacy.png" alt="Financial literacy Certification" class="achievement-img">
                 <h3 class="achievement-title">Financial literacy Certification</h3>
             </div>
-            <div class="achievement-card" data-aos="fade-up" data-aos-delay="900">
+            <div class="achievement-card hidden-achievement" data-aos="fade-up" data-aos-delay="900">
                 <img src="asset/english.png" alt="English For Business Communication Certification" class="achievement-img">
                 <h3 class="achievement-title">English For Business Communication Certification</h3>
             </div>
-            <div class="achievement-card" data-aos="fade-up" data-aos-delay="1000">
+            <div class="achievement-card hidden-achievement" data-aos="fade-up" data-aos-delay="1000">
                 <img src="asset/certificate dbs.png" alt="Certificate of Completion DBS" class="achievement-img">
                 <h3 class="achievement-title">Certificate of Completion DBS</h3>
             </div>
-            <div class="achievement-card" data-aos="fade-up" data-aos-delay="1100">
+            <div class="achievement-card hidden-achievement" data-aos="fade-up" data-aos-delay="1100">
                 <img src="asset/captsone.png" alt="Best Capstone Certification" class="achievement-img">
                 <h3 class="achievement-title">Best Capstone Certification</h3>
             </div>
@@ -234,7 +233,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="300">Contact Me</h2>
         <div class="contact-container">
             <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
                 <h3>Let's Connect</h3>
@@ -297,6 +296,13 @@
 
 
     <script src="script.js"></script>
+    <script>
+        document.getElementById('showMoreBtn').addEventListener('click', function () {
+            const hiddenItems = document.querySelectorAll('.hidden-achievement');
+            hiddenItems.forEach(item => item.style.display = 'block');
+            this.style.display = 'none'; // sembunyikan tombol setelah diklik
+        });
+</script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

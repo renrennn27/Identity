@@ -196,7 +196,7 @@ header {
     align-items: center;
     gap: 30px;
     position: absolute;
-    bottom: 9rem;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%); 
     z-index: 10;
@@ -218,10 +218,11 @@ header {
     text-decoration: none;
 }
 
-.btn .btn2 {
+.btn .btn2  {
     background-color: transparent;
     color: white;
     border: 1px solid var(--gray);
+    text-decoration: none;
 }
 
 .btn .btn1:hover {
@@ -396,7 +397,7 @@ section {
 
 .achievement-card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 30px rgb(0, 0, 0);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.644);
 }
 
 .achievement-img {
